@@ -19,7 +19,7 @@ let submitData = (a,b) => {
   })
   .catch(error => {
     let p = document.createElement("p");
-    p.innerHTML = errow.message;
+    p.innerHTML = error.message;
     document.body.appendChild(p);
   })
 }
